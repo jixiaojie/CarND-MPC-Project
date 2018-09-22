@@ -101,7 +101,7 @@ Here is a code fragment in MPC.cpp:
   
 
 #### 5.Model Predictive Control with Latency.
-In the MPC preprocessing ,I according to dt get a "latency value", then by the "latency value", chose the delta0 & a0 from state array.  
+In the MPC preprocessing ,I according to "dt" get a "latency value", then by the "latency value", chose the delta0 & a0 from state array.  
 Here is a code fragment in MPC.cpp:  
   
 ```
