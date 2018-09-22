@@ -25,12 +25,14 @@ I compile project by following instructions:
 4. make
 5. ./mpc
   
+  
 #### 2.The Model.
 Here is the MPC formula from classroom:
 <div class="test">
 <img src="Docs/framework.png" width="600" />
 </div>
 
+  
   
 #### 3.Timestep Length and Elapsed Duration (N & dt).
 The N and dt were chose:  
@@ -47,6 +49,7 @@ N = 15 & dt = 0.05
   
 Finally I chose N = 10 & dt = 0.05 , because they are relatively stable.  
 
+  
   
 #### 4.Polynomial Fitting and MPC Preprocessing.
 I used polyfit function from classroom.  
@@ -75,7 +78,7 @@ Here is a code fragment in main.cpp:
     }
 ```
   
-In the MPC preprocessing £¬I referenced some [code](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/338b458f-7ebf-449c-9ad1-611eb933b076/concepts/ee21948d-7fad-4821-b61c-0d69bbfcc425) from classroom.  
+In the MPC preprocessing, I referenced some [code](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/338b458f-7ebf-449c-9ad1-611eb933b076/concepts/ee21948d-7fad-4821-b61c-0d69bbfcc425) from classroom.  
 Additionally I add a brake control to the MPC  
 Here is a code fragment in MPC.cpp:  
   
@@ -95,6 +98,7 @@ Here is a code fragment in MPC.cpp:
 
 ```
   
+  
 
 #### 5.Model Predictive Control with Latency.
 In the MPC preprocessing ,I according to dt get a "latency value", then by the "latency value", chose the delta0 & a0 from state array.  
@@ -108,6 +112,7 @@ Here is a code fragment in MPC.cpp:
           a0 = vars[a_start + t - latency];
       }
 ```
+  
   
 #### 5.The vehicle must successfully drive a lap around the track.
 My car drove a lap around the track successfully.  
