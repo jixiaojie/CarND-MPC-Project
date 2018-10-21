@@ -114,6 +114,6 @@ Here is a code fragment in MPC.cpp:
 ```
   
   
-#### 5.The vehicle must successfully drive a lap around the track.
+#### 6.The vehicle must successfully drive a lap around the track.
 My car drove a lap around the track successfully.  
 Here's a [video link](./Docs/video.mp4) to my result  
